@@ -7,7 +7,7 @@ favicon: 'assets/images/logo.png'
 baseurl: ""
 google_analytics: ''
 disqus: ''
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 
@@ -15,8 +15,8 @@ permalink: /:title/
 authors:
   me:
     name: KBR
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    display_name: KBR
+    gravatar: ''
     email: jsbo4253@gmail.com
     web: ''
     twitter: ''
