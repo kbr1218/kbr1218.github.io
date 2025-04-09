@@ -7,6 +7,34 @@ License: https://www.wowthemes.net/freebies-license/
     html { font-size:18px; } /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
 }
+
+@font-face {
+    font-family: 'PlayfairDisplay-ExtraBold';
+    src: url('/assets/fonts/PlayfairDisplay-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('/assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Ubuntu-BoldItalic';
+    src: url('/assets/fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Ubuntu-LightItalic';
+    src: url('/assets/fonts/Ubuntu-LightItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+
+
 .mainheading {
     padding: 1rem 0rem;
 }
@@ -206,7 +234,7 @@ section.recent-posts {
     margin-bottom: 5px;
     margin-top: 5px;
     font-size: 0.95rem;
-    color: rgba(46, 46, 46, 0.63);
+    color: rgba(46, 46, 46, 0.726);
 }
 
 .toc ul {
@@ -306,7 +334,12 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-    font-family: Righteous;
+    font-family: 'Ubuntu-Bold', Righteous;
+}
+
+.mainheading p.sitedescription {
+    font-family: 'Ubuntu-LightItalic', Righteous;
+    color: #363636a2;
 }
 
 .mainheading h1.posttitle {
