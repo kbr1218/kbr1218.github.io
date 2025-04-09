@@ -11,10 +11,13 @@ source "https://rubygems.org"
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 group :jekyll_plugins do
     gem 'jekyll-feed'
+    gem 'bigdecimal', '1.3.5'
     gem 'jekyll-sitemap'
     gem 'jekyll-paginate'
     gem 'jekyll-seo-tag'
     gem 'jekyll-archives'
     gem 'kramdown'
     gem 'rouge'
+    gem 'ffi', '>= 1.15.0'
+    gem 'eventmachine', '1.2.7', platforms: [:ruby]
 end

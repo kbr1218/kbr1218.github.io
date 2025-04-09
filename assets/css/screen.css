@@ -206,6 +206,7 @@ section.recent-posts {
     margin-bottom: 5px;
     margin-top: 5px;
     font-size: 0.95rem;
+    color: rgba(46, 46, 46, 0.63);
 }
 
 .toc ul {
@@ -325,8 +326,10 @@ span.post-read-more a:hover {
     background: #fff;
 }
 
-.link-dark {
+a.link-dark {
     color: rgba(0, 0, 0, .8);
+    font-size: 1.31rem;
+    font-weight: bold;
 }
 
 .article-post {
@@ -532,18 +535,6 @@ ul.tags li a:hover {
     border-radius: 999em;
     font-size: 0.85rem;
     display: inline-block;
-}
-
-.btn.subscribe {
-    background-color: #1C9963;
-    border-color: #1C9963;
-    color: rgba(255, 255, 255, 1);
-    fill: rgba(255, 255, 255, 1);
-    border-radius: 30px;
-    font-size: 0.85rem;
-    margin-left: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
 .post-top-meta .btn.follow {
