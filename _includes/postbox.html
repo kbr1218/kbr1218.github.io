@@ -25,8 +25,17 @@
                 </div>
                 {% endif %}
             </h2>
-            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
+            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords: 15 }}</h4>
+
+            {% if post.categories %}
+            <div class="mb-1 categories_tag">
+                {% for category in post.categories %}
+                <a href="{{ site.baseurl }}/categories#{{ category | slugify }}"># {{ category }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
+
         <div class="card-footer bg-white">
             <div class="wrapfooter">
                 {% if post.author %}

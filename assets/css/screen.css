@@ -168,6 +168,11 @@ section.recent-posts {
     padding-left: 0;
 }
 
+/* 텍스트랑 해시태그 */
+.card-body {
+    padding-bottom: 0.75rem;
+}
+
 .listfeaturedtag h2.card-title,
 .listrecent h2.card-title {
     font-size: 1.3rem;
@@ -181,6 +186,19 @@ section.recent-posts {
     font-size: 0.95rem;
     line-height: 1.6;
     font-weight: 400;
+}
+
+/* 게시물 카테고리 태그 */
+.categories_tag a {
+    font-size: 0.8em;
+    color: #e83e8c; 
+    text-decoration: none;
+    margin-right: 6px;
+}
+  
+.categories_tag a:hover {
+    color: rgb(126, 46, 46);
+    text-decoration: underline;
 }
 
 .featured-box-img-cover {
@@ -201,7 +219,7 @@ section.recent-posts {
     font-size: .8rem;
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .author-thumb {
@@ -342,7 +360,7 @@ span.post-read-more a:hover {
     color: #363636a2;
 }
 
-.mainheading h1.posttitle {
+.mainheading h2.posttitle {
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -387,6 +405,7 @@ blockquote {
 .featured-image {
     display: block;
     margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .share {
