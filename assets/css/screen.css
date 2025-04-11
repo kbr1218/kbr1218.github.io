@@ -91,6 +91,7 @@ section.recent-posts {
     margin-bottom: 0;
 }
 
+/* 카테고리 */
 .section-title h2 {
     border-bottom: 1px solid rgba(0, 0, 0, .125);
     margin-bottom: 25px;
@@ -99,11 +100,16 @@ section.recent-posts {
     margin-bottom: 27px;
 }
 
-.section-title span {
+.section-title span.label {
+    margin-right: 8px;
+}
+
+.section-title span.category-title {
     border-bottom: 1px solid rgba(0, 0, 0, .44);
     display: inline-block;
     padding-bottom: 20px;
     margin-bottom: -1px;
+    color: #005dc0;
 }
 
 .article-post ol,
