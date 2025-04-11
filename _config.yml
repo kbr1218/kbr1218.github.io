@@ -46,6 +46,7 @@ paginate_path: /page:num/
     
 # Other
 markdown: kramdown
+future: true
 
 kramdown:
   input: GFM
