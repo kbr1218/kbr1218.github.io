@@ -4,7 +4,7 @@ title:  "Kaggle x Google: 5일 완성 Gen AI 집중 코스 시작하기 🚀"
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-01 09:00:00
-image: assets/images/20250410/header.png
+image: assets/images/20250402/header.png
 ---
 2025년 3월 31일부터 4월 4일까지 Kaggle에서 Google과 함께 진행하는 **"5-Day Gen-AI Intensive Course"**를 따라가보기로 했다! 
 학습 내용을 정리하고 매일의 과제를 따라가면서 배운 내용을 공유하기 위해 **`Kaggle Gen-AI`** 카테고리를 만들었다.  

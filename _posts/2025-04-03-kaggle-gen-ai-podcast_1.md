@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - Transformer 구조 한 눈에 보기🚀"
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-03 09:00:00
-image: assets/images/20250410/day1.png
+image: assets/images/20250402/day1.png
 ---
 Day 1 인트로 유닛의 팟캐스트에서는
 - "LLM은 무엇으로 이루어져 있는가?"
@@ -39,7 +39,7 @@ Day 1 인트로 유닛의 팟캐스트에서는
    </div>
    <!-- 오른쪽: 이미지 -->
    <div style="flex: 4; min-width: 120px;">
-      <img src="/assets/images/20250411/01_original_transformer.png" 
+      <img src="/assets/images/20250403/01_original_transformer.png" 
          alt="Transformer 전체 구조" 
          style="max-width: 100%; display: block; margin-left: auto; border: 1px solid #ddd; border-radius: 6px;" />
       <small style="color:gray">Transformer는 인코더와 디코더 구조로 구성되며, 입력 문장에서 출력 문장을 생성하기까지의 전체 연산 흐름을 포함한다</small>
@@ -116,7 +116,7 @@ Self-Attention은 **각 단어가 문장 내 다른 단어들과 어떤 관련�
    </div>
    <!-- 오른쪽: 이미지 -->
    <div style="flex: 2; min-width: 120px;">
-      <img src="/assets/images/20250411/03_multi_head_attention.png" 
+      <img src="/assets/images/20250403/03_multi_head_attention.png" 
          alt="Multi-Head Attention 구조" 
          style="max-width: 100%; display: block; margin-left: auto; border: 1px solid #ddd; border-radius: 6px;" />
    </div>
@@ -150,7 +150,7 @@ Self-Attention은 **각 단어가 문장 내 다른 단어들과 어떤 관련�
 
   <!-- 오른쪽: 계산 시각화 이미지 -->
   <div style="flex: 4; min-width: 280px;">
-    <img src="/assets/images/20250411/02_computing.png" alt="Self-Attention 계산 시각화" style="max-width: 100%; border: 1px solid #ddd; border-radius: 6px;" />
+    <img src="/assets/images/20250403/02_computing.png" alt="Self-Attention 계산 시각화" style="max-width: 100%;" />
     <small style="color:gray; display: block; margin-top: 8px;">
       Query와 Key의 내적 → 정규화 → Value에 가중치를 곱해 Attention 출력을 계산하는 전체 흐름
     </small>
@@ -288,7 +288,7 @@ Output
    </div>
    <!-- 오른쪽: 이미지 -->
    <div style="flex: 3; min-width: 120px;">
-      <img src="/assets/images/20250411/04_transformer_layer.png" 
+      <img src="/assets/images/20250403/04_transformer_layer.png" 
          alt="Transformer Layer" 
          style="max-width: 100%; display: block; margin-left: auto; border: 1px solid #ddd; border-radius: 6px;" />
    </div>

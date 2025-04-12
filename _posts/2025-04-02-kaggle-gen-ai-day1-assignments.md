@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 과제 소개 - LLM & Prompt Engineering 🚀"
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-02 09:00:00
-image: assets/images/20250410/day1.png
+image: assets/images/20250402/day1.png
 ---
 
 첫 번째 날은 **LLM의 기본 개념**부터 시작해서, **프롬프트 엔지니어링**의 기초를 배우고 실습해보는 흐름으로 구성되어 있다.  
