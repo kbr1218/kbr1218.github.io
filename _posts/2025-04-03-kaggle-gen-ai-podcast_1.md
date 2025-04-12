@@ -294,17 +294,17 @@ Output
    </div>
 </div>
 
-
-
-
-
-
-
-
-
 - 하나의 Transformer 레이어는 **두 개의 sub-layer로 구성**되고,
 - 각 sub-layer 앞에는 **LayerNorm**, 뒤에는 **Residual Connection**이 적용된다.
 - 이 구조를 N번 반복한 것이 전체 Transformer 블록이 된다
+
+<br>
+
+---
+### 💭오늘 챙겨간 것들
+이번 게시물에서는 LLM의 뿌리가 되는 Transformer 아키텍처가 왜 그렇게 혁신적이었는지, 그리고 그 안에서 작동하는 Self-Attention과 Multi-Head Attention의 핵심 메커니즘이 무엇인지 이해할 수 있었다!
+
+내일은 이 구조를 바탕으로 GPT같은 최신 LLM들이 사용하는 Decoder-only 아키텍처가 어떻게 작동하는지, 그리고 왜 그런 구조가 선택되었는지에 대해 정리해보겠다.
 
 
 <br><br>
