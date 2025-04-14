@@ -1,0 +1,160 @@
+---
+layout: post
+title:  "[Kaggle Gen AI] Day 1 - Transformer 이후, LLM 진화 타임라인 🚀"
+author: me
+categories: [ Kaggle Gen-AI ]
+date: 2025-04-05 09:00:00
+image: assets/images/20250402/day1.png
+---
+[지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_2/)에서는 요즘 모델들이 왜 Decoder-Only 구조를 주로 채택하는지에 대해 살펴봤다.
+
+이번 글에서는, 첫 번째 Transformer 논문 발표 이후 LLM들이 **어떻게 발전해 왔는지,** 
+GPT-1부터 최신 모델인 Gemini, LLaMA까지의 **LLM 진화 타임라인**을 따라가며 그 흐름을 정리해보겠다!  
+
+**어떤 모델이 전환점을 만들었는지**, 그리고 지금 우리가 쓰는 초거대 AI들이 어떤 배경에서 나왔는지 알 수 있을 것이다.
+
+[👉 팟캐스트 원본 링크 바로가기](https://www.youtube.com/watch?v=Na3O4Pkbp-U&list=PLqFaTIg4myu_yKJpvF8WE2JfaG5kGuvoE&index=1)
+
+<br>
+
+---
+### 1️⃣ GPT-1 (2018) — Decoder-Only & Unsupervised Pretraining의 시작점
+2018년, OpenAI는 **GPT-1 (Generative Pre-trained Transformer)**이라는 모델을 공개했다. 
+> GPT1 from OpenAI in 2018 was a real turning point.
+
+<div style="margin-top: 1.3em;"></div>
+
+##### 📌 주요 특징
+- **Decoder-Only 구조**
+  - Transformer 논문에서는 Encoder-Decoder 구조가 기본이었지만, GPT-1은 **Decoder 블록만 쌓은 구조**를 선택했다.  
+
+<div style="margin-top: 1.3em;"></div>
+
+- **Unsupervised Pretraining + Supervised Fine-tuning**
+  - 대규모 책 데이터셋 BooksCorpus로 **지도 학습 없이**<small style="color:gray">(unsupervised)</small> 먼저 언어 패턴을 학습했다.
+  - 이후, 특정 태스크에 대해 **소량의 레이블된 데이터로 파인튜닝**<small style="color:gray">(fine-tuning)</small>을 수행하는 방식.
+    ➡ 지도 학습 없이, 방대한 텍스트만으로 **언어적 일반 패턴**<small style="color:gray">(language pattern)</small>을 효과적으로 학습할 수 있다는 걸 보여줬다.
+
+<div style="background: #fff9e7; border-left: 4px solid #fdc82a; padding: 12px 16px; margin: 24px 0; border-radius: 4px;">
+  ⚠️ GPT-1의 한계: 긴 문맥 유지에 어려움이 있고, 같은 문장을 반복하거나 점점 비자연스러운 텍스트를 생성하는 경우가 있다.  
+</div>
+<br>
+
+---
+### 2️⃣ BERT (2018) — Encoder-Only, 텍스트 이해에 최적화된 구조
+같은 해, Google은 GPT-1과는 완전히 다른 접근법을 택한 모델은 **BERT (Bidirectional Encoder Representations from Transformers)**를 발표했다.  
+GPT가 문장을 **생성**<small style="color:gray">(generation)</small>하는 데 초점을 맞췄다면, BERT는 문장을 **이해**<small style="color:gray">(understanding)</small>하는 데 집중한 것!
+
+<div style="margin-top: 1.3em;"></div>
+
+##### 📌 주요 특징
+- **Encoder-Only 구조**
+  - Transformer의 Encoder 블록만을 활용하여, 입력 문장을 **양방향**<small style="color:gray">(Bidirectional)</small>으로 처리할 수 있다.
+  - 즉, 단어의 왼쪽과 오른쪽 문맥을 모두 고려해, 의미를 더 정확히 파악한다.
+
+<div style="margin-top: 1.3em;"></div>
+
+- **Pretraining Task: MLM + NSP**
+  - Masked Language Modeling (MLM): 문장 중 일부 단어를 [MASK]로 가리고, 그 단어를 예측하게 함
+  - Next Sentence Prediction (NSP): 두 문장을 입력받고, **“두 문장이 실제로 이어지는 문장인가?”**를 판단하게 함
+
+<div style="background: #f9f9f9; border-left: 4px solid #007bff; padding: 12px 16px; margin: 24px 0; border-radius: 4px;">
+   💬 BERT의 NSP는 <strong>"다음 문장을 생성"하는 게 아니라, "두 문장이 연결된 의미인지 이해"하는 분류 문제</strong>다.
+</div>
+
+- **GPT-1과 비교하면**
+  - GPT는 한 방향(좌→우)으로만 문장을 생성하지만,
+  - BERT는 양방향 문맥을 동시에 고려하여 이해에 훨씬 강하다.  
+  - GPT-1은 말을 하긴 했지만 맥락이 자주 어긋났고, BERT는 문맥 이해는 잘 했지만, 대화를 이어갈 수는 없었다.
+
+<br>
+
+---
+### 3️⃣ GPT-2 (2019) — 스케일의 힘 & Zero-shot Learning의 등장
+2019년, OpenAI는 GPT-1을 대규모로 확장한 GPT-2를 발표했다.  
+이 모델은 단순한 크기 증가를 넘어서, **모델의 일반화 능력**까지 한 단계 끌어올린 전환점이 되었따.
+
+<div style="margin-top: 1.3em;"></div>
+
+##### 📌 주요 특징
+- **더 큰 모델, 더 많은 데이터**
+  - Reddit 기반의 **WebText**라는 대규모 데이터셋 사용
+  - GPT-1보다 훨씬 더 많은 파라미터 수로 모델 규모 대폭 증가
+
+<div style="margin-top: 1.3em;"></div>
+
+- **더 나아진 언어 생성 능력**
+  - 문장 간 연결이 더 자연스러워졌고, 긴 문맥에서도 일관성 있는 응답을 할 수 있게 됨!
+
+<div style="margin-top: 1.3em;"></div>
+
+- **Zero-shot Learning**
+  - 별도의 학습 없이도, **프롬프트에 태스크 예시만 주면 알아서 수행**한다.
+  - "*"예를 들어 이런 식으로 해줘"*만 알려주면, 그 태스크의 패턴을 파악하고 답변 가능!
+  - 이건 나중에 GPT-3로 이어지는 핵심 기술의 기반이 된다.
+
+
+<div style="background: #f9f9f9; border-left: 4px solid #007bff; padding: 12px 16px; margin: 24px 0; border-radius: 4px;"> 💬 GPT-2는 단순한 크기 확장을 넘어서,
+  <strong>"모델이 태스크를 스스로 유추하는" Zero-shot 시대</strong>의 문을 열었다. LLM의 활용 가능성을 대폭 넓힌, <strong>기술적 도약</strong>이었다!
+  <small style="color:gray"><em>(it was quite a leap!)</em></small>
+
+</div>
+
+<br>
+
+---
+### 4️⃣ GPT-3 & GPT-4 - 대규모 파라미터와 멀티모달
+OpenAI는 2020년부터 GPT 시리즈를 본격적인 **'초거대 모델'** 시대로 끌어올리기 시작했다.  
+GPT-3부터 GPT-4에 이르기까지, LLM은 단순히 커지는 것을 넘어 **새로운 방식의 학습과 입력 이해 능력**을 갖추게 된다.  
+
+<div style="margin-top: 1.3em;"></div>
+
+##### 🧠 GPT-3 (2020) — Few-shot 학습과 Instruction Tuning의 시작
+- GPT-3는 무려 1750억 개의 파라미터를 가진 초대형 모델로 등장했다.
+  GPT-2의 구조를 기반으로 하지만, 규모를 압도적으로 키움으로써 모델의 언어 능력에 큰 도약을 가져왔다.
+
+- GPT-3는 특히 소량의 예시만으로도 학습할 수 있는 **Few-shot learning** 능력이 크게 향상되었다.
+
+- 자연어로 작성된 명령을 더 잘 따르도록 별도 학습<small style="color:gray">(instruction tuning)</small>된 버전인 **InstrucGPT** 모델도 나오고, **코드 이해 및 생성**에 매우 뛰어난 GPT-3.5도 나왔다
+
+<div style="margin-top: 3.3em;"></div>
+
+##### 🧩 GPT-4 (2023) — 멀티모달 & 초장기 문맥 처리의 등장
+GPT-4는 이전 모델들과 비교해 완전한 **Game Changer**였다.
+- 진정한 **멀티모달**<small style="color:gray">(Multimodal)</small> 모델로, 이미지와 텍스트를 함께 입력받아 이해하는 능력이 있었다.
+- **컨텍스트 윈도우**<small style="color:gray">(Context Window)</small> 크기도 폭발적으로 증가해서, 한 번에 수만~수백만 토큰의 텍스트를 넣어도 문맥을 놓치지 않고 이해할 수 있는 구조가 되었다.
+
+<br>
+
+---
+### 5️⃣ LaMDA (2021) — 대화에 특화된 자연스러운 AI
+2021년, Google은 **LaMDA (Language Model for Dialogue Applications)**라는 대화 특화 언어 모델을 공개하며 **대화형 AI 영역에 집중된 접근법**을 보여주었다.
+LaMDA는 대화형 인공지능<small style="color:gray">(Conversational AI)</small>의 가능성을 전면에 내세운 모델이었다.
+
+<div style="margin-top: 1.3em;"></div>
+
+##### 📌 주요 특징
+- **대화에 최적화된 설계**
+  - 처음부터 자연스럽고 유창한 대화를 위해 설계된 **대화 특화 모델.**
+  - GPT 시리즈가 점점 범용<small style="color:gray">(general-purpose)</small> 모델로 발전해갔지만, LaMDA는 오직 ‘대화’에 집중하였고, 그 성능이 잘 드러났다!
+
+<br>
+
+---
+### 6️⃣ GLaM (2021) — Mixture of Experts로 더 가볍고 빠르게
+2021년, Google은 **GLaM (Generalist Language Model)**을 공개했다.  
+이 모델은 **Mixture of Experts (MoE)** 방식을 적용하여, 초거대 모델임에도 불구하고 더 효율적인 연산을 가능하게 했다.
+
+<div style="margin-top: 1.3em;"></div>
+
+##### 📌 주요 특징
+- **MoE(Mixture of Experts) 구조 활용**
+  - 전문가 네트워크를 선택적으로 활성화해, 큰 모델임에도 속도와 효율을 확보했다.
+
+<div style="margin-top: 1.3em;"></div>
+
+- **Dense 모델 대비 효율적인 성능**
+  - GPT-3 같은 Dense 모델과 비슷하거나 더 나은 성능을 보이면서도 **훨씬 적은 연산 자원**<small style="color:gray">(compute power)</small>으로 동작했다.
+
+
+<br><br>
