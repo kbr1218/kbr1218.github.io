@@ -6,22 +6,28 @@ comments: true
 ---
 
 <div class="row justify-content-between">
-<div class="col-md-8 pr-5">
-
-<p>여기에 뭐라고 써야할까</p>
-
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-</div>
-
-<div class="col-md-4">
-
-<div class="sticky-top sticky-top-80">
-<h5><i class="fas fa-compass"></i> WHERE TO FIND ME</h5>
-
-<p><a target="_blank" href="https://github.com/kbr1218">Github <i class="fab fa-github"></i></a></p>
-
-<!-- <a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a> -->
-
-</div>
-</div>
+    <div class="col-md-8 pr-5">
+        <p><strong>🎧 Now Playing</strong><br>
+            <small style="color:gray">
+            <em>
+                my favorite of favorites — 
+                a handpicked mix of Taylor Swift songs that just get me.
+            </em>
+            </small>
+        </p>
+        <p class="mb-5">
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450"
+                style="width:100%;overflow:hidden;border-radius:10px;"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"        src="https://embed.music.apple.com/kr/playlist/fav-fav/pl.u-qxylla5s2M11drP?l=en-GB">
+            </iframe>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <div class="sticky-top sticky-top-80">
+            <p>
+                <strong>🧭 WHERE TO FIND ME</strong><br>
+                <a target="_blank" href="https://github.com/kbr1218" style="margin-left:25px">Github <i class="fab fa-github"></i></a>
+            </p>
+        </div>
+    </div>
 </div>
