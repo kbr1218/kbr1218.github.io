@@ -45,7 +45,7 @@ GPT-1부터 최신 모델인 Gemini, LLaMA까지의 **LLM 진화 타임라인**�
 같은 해, Google은 GPT-1과는 완전히 다른 접근법을 택한 모델은 **BERT (Bidirectional Encoder Representations from Transformers)**를 발표했다.  
 GPT가 문장을 **생성**<small style="color:gray">(generation)</small>하는 데 초점을 맞췄다면, BERT는 문장을 **이해**<small style="color:gray">(understanding)</small>하는 데 집중한 것!
 
-<div style="margin-top: 1.3em;"></div>
+![Google-BERT](https://www.vizion.com/wp-content/smush-webp/2019/10/google-bert-update.png.webp)
 
 ##### 📌 주요 특징
 - **Encoder-Only 구조**
@@ -107,7 +107,7 @@ GPT가 문장을 **생성**<small style="color:gray">(generation)</small>하는 
 OpenAI는 2020년부터 GPT 시리즈를 본격적인 **'초거대 모델'** 시대로 끌어올리기 시작했다.  
 GPT-3부터 GPT-4에 이르기까지, LLM은 단순히 커지는 것을 넘어 **새로운 방식의 학습과 입력 이해 능력**을 갖추게 된다.  
 
-<div style="margin-top: 1.3em;"></div>
+![from GPT-1 to GPT-4](https://www.dataquest.io/wp-content/uploads/2024/02/What-are-GPT-Models-and-How-Will-They-Be-Used-for-AI-Chatbots-in-2024_-1024x548.png.webp)
 
 ##### 🧠 GPT-3 (2020) — Few-shot 학습과 Instruction Tuning의 시작
 - GPT-3는 무려 1750억 개의 파라미터를 가진 초대형 모델로 등장했다.
@@ -131,7 +131,7 @@ GPT-4는 이전 모델들과 비교해 완전한 **Game Changer**였다.
 2021년, Google은 **LaMDA (Language Model for Dialogue Applications)**라는 대화 특화 언어 모델을 공개하며 **대화형 AI 영역에 집중된 접근법**을 보여주었다.
 LaMDA는 대화형 인공지능<small style="color:gray">(Conversational AI)</small>의 가능성을 전면에 내세운 모델이었다.
 
-<div style="margin-top: 1.3em;"></div>
+![Google LaMDA](https://opendatascience.com/wp-content/uploads/2022/07/google_lamda_logo_1.png)
 
 ##### 📌 주요 특징
 - **대화에 최적화된 설계**
@@ -155,6 +155,101 @@ LaMDA는 대화형 인공지능<small style="color:gray">(Conversational AI)</sm
 
 - **Dense 모델 대비 효율적인 성능**
   - GPT-3 같은 Dense 모델과 비슷하거나 더 나은 성능을 보이면서도 **훨씬 적은 연산 자원**<small style="color:gray">(compute power)</small>으로 동작했다.
+
+<br>
+
+---
+### 7️⃣ Chinchilla (2022) — 모델 크기보단 데이터 양!
+2022년, DeepMind는 기존의 "모델은 클수록 좋다"는 통념에 강한 도전장을 던지는 연구를 발표했다.
+> Chinchilla was a really important paper.
+
+![DeepMind Chinchilla](https://www.pcguide.com/wp-content/uploads/2023/01/Chat-GPT-Alternatives.jpg)
+
+##### 📌 주요 특징
+- **"Scaling Law"에 대한 반론**
+  - 이전까지는 모델의 파라미터 수만 늘리면 성능이 오른다는 믿음이 있었지만,
+  - Chinchilla는 **같은 파라미터 수라도 훨씬 많은 데이터로 학습했을 때** 더 좋은 성능을 낼 수 있다는 걸 보여줬다. <small style="color:gray">(bigger ≠ always better)</small>
+
+<div style="margin-top: 1.3em;"></div>
+
+- **70B 파라미터 + 초대규모 데이터셋**
+  - Chinchilla는 70억 개 파라미터<small style="color:gray">(GPT-3보다도 작음)</small>를 가지고도
+  - GPT-3보다 **4배 더 많은 텍스트 데이터로 학습**함으로써 훨씬 뛰어난 성능을 달성했다.
+
+<div style="margin-top: 1.3em;"></div>
+
+- **"데이터 효율성"의 시대 개막**
+  - 이 연구 이후, LLM을 설계할 때 **파라미터 수와 데이터량의 균형을 맞추는 것**이 중요한 기준이 되었따.
+  - 더이상 "모델만 키우면 된다"는 단순한 스케일 전략은 통하지 않게 된 것! 
+
+<br>
+
+---
+### 8️⃣ PaLM & PaLM 2 — 효율적인 스케일링 + 더 똑똑해진 후속 모델
+2022년, Google은 **PaLM (Pathways Language Model)**을 공개하며 초거대 모델 경쟁에 본격적으로 뛰어들었다.
+이 모델은 다양한 벤치마크에서 뛰어난 성능을 보였고, 그 배경에는 Google의 Pathways 시스템이 있었다.
+
+![Google PaLM](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB1PnUmq_jvA7oJ9eRUcKCGNvv-DhACeK4bw&s)
+
+##### 📌 주요 특징
+- **Pathways 시스템 기반**
+  - 여러 작업을 하나의 모델로 처리할 수 있도록 설계된 시스템으로, **효율적인 확장(스케일링)**이 가능하다.
+  - 덕분에 다양한 언어 태스크에서 높은 성능을 낼 수 있었다.
+
+<div style="margin-top: 1.3em;"></div>
+
+- **PaLM 2 (2023): 파라미터 수는 줄고, 성능은 향상**
+  - 후속 모델인 PaLM 2는 PaLM에 비해 파라미터 수는 줄었지만, 추론<small style="color:gray">(reasoning)</small>, 수학, 코딩 등에서 더 강력한 성능을 보여줬다.
+  - 현재 Google Cloud의 **생성형 AI 서비스들에 핵심으로 사용되고 있는 모델**이기도 하다
+
+<br>
+
+---
+### 9️⃣ Gemini — 멀티모달, 더 빠르고 더 길게
+Google은 Gemini라는 이름으로 새로운 세대의 LLM 시리즈를 선보였다.
+Gemini는 처음부터 **멀티모달(multimodal)**을 염두에 두고 설계된 모델로, 단순한 언어 이해를 넘어서 다양한 입력을 처리할 수 있다.
+> Gemini is really pushing the boundaries.
+
+![Google Gemini](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/1200px-Google_Gemini_logo.svg.png)
+
+##### 📌 주요 특징
+- **멀티모달 지원**
+  - 텍스트뿐 아니라 **이미지, 오디오, 비디오**까지 함께 처리할 수 있는 구조이다.
+  - GPT-4와 비슷한 방향이지만, Gemini는 **처음부터 멀티모달을 목적으로 설계**되었다.
+
+<div style="margin-top: 1.3em;"></div>
+
+- **확장성과 효율성에 초첨**
+  - Google의 **TPUs**<small style="color:gray">(Tensor Processing Unit)<small>에 최적화되어 **매우 빠르게 작동**한다.
+  - **MoE**<small style="color:gray">(Mixture of Experts)</small> 구조도 일부 버전에 적용하여 효율적 연산이 가능하다.
+
+<div style="margin-top: 1.3em;"></div>
+
+- **여러 크기의 모델 버전**
+  - **Ultra, Pro, Nano, Flash** 등 다양한 크기로 제공되어, 용도에 따라 선택이 가능하여 경량 모델부터 대규모 모델까지 유연하게 대응이 가능하다.
+
+<div style="margin-top: 1.3em;"></div>
+
+- **Gemini 1.5 Pro: 긴 문맥 처리 능력**
+  - 특히 **Gemini 1.5 pro**는 **수백만 토큰까지 처리 가능한 초장기 컨텍스트 윈도우**를 지원한다.
+  - 대용량 문서 분석, 코드 해석에서 강력한 능력을 발휘한다.
+
+<br>
+
+---
+### 💭오늘 챙겨간 것들
+이번 글에서는 Transformer 이후 등장한 주요 LLM들의 흐름을 따라가며, GPT-1부터 Gemini까지 어떤 변화와 진화가 있었는지 살펴봤다.
+- Decoder-Only 구조의 시작 (GPT 시리즈)
+- 텍스트 이해 특화 모델 BERT
+- 스케일이 성능을 바꾸는 GPT-2 ~ GPT-4
+- 대화형 모델 LaMDA, 효율형 GLaM
+- 데이터 효율성을 강조한 Chinchilla
+- Pathways 기반 PaLM 시리즈
+- 멀티모달 Gemini 시리즈
+
+이 흐름으로, 이제 LLM은 단순 크기 경쟁이 아니라, 모달리티/속도/효율성/문맥 처리 능력까지 고려하는 **종합적 기술 경쟁** 시대로 들어왔다는 걸 알 수 있다!  
+
+다음 글에서는, 최근 뜨고 있는 **오픈소스 모델들**에 대해서도 살펴보겠다. 🚀
 
 
 <br><br>
