@@ -99,12 +99,54 @@ RLHF는 모델의 출력을 **사람이 선호하는 방향으로 정렬**<small
   : 보상 모델 없이도, 선호도를 바로 최적화하는 새로운 접근법
 
 → 이런 기술들은 정렬 과정<small style="color:gray">(alignment)</small>을 더 빠르고 안정적으로 만드는 시도들이다.
-   
 
+<br>
 
+---
+### 🧩 PEFT (Parameter-Efficient Fine-Tuning): 작은 변화로 큰 효과 내기
+LLM을 전부 파인튜닝하는 건 사실 **비용과 자원이 엄청나게 많이 드는 작업**이다.  
+그래서 최근에는, **모델 전체를 바꾸지 않고도 원하는 태스크에 적응시키는** 새로운 방식인 **PEFT**<small style="color:gray">(Parameter-Efficient Fine-Tuning)</small> 기법들이 등장하고 있다.  
+
+즉, 모델 전체를 손대는 게 아니라, **작은 부분만 조정해서 전체 성능을 끌어올리는 전략**이라고 보면 된다.
+> so it's like just making small adjustments instead of overhauling the entire system.
+
+<div style="margin-top: 2.3em;"></div>
+
+아래는 PEFT 기법들의 예시 몇 가지이다:
+
+##### 1️⃣ Adapter-based Fine-tuning
+모델 안에 **작은 모듈**<small style="color:gray">(Adapter)</small>을 추가하고, **그 안의 파라미터만 학습**시키는 방식이다. 
+기존 모델은 유지하면서 **일종의 확장팩**을 붙여서 새로운 능력을 부여하는 느낌!
+
+<div style="margin-top: 2.3em;"></div>
+
+##### 2️⃣ LoRA (Low-Rank Adaptation)
+전체 **weight**를 바꾸는 대신, 변화를 **저차원 행렬**<small style="color:gray">(Low-Rank Matrices)</small>로 근사해서 학습시키는 기법이다. 
+아주 적은 수의 파라미터만 바꾸면서도, **전체 모델을 파인튜닝한 것처럼** 효과를 낼 수 있다.
+
+<div style="margin-top: 2.3em;"></div>
+
+##### 3️⃣ QLoRA (Quantized LoRA)
+LoRA를 **더 가볍교 효율적으로 만든 버전**이다.  
+모델의 weight를 **양자화**<small style="color:gray">(Quantization)</small> 해서 메모리 사용량을 대폭 줄이면서, **훨씬 적은 비용으로 LoRA를 적용**할 수 있게 해준다.
+
+<div style="margin-top: 2.3em;"></div>
+
+##### 4️⃣ Soft Prompting
+모델 자체는 건드리지 않고, **입력 앞에 "학습된 벡터"<small style="color:gray">(Soft Prompt)</small>를 붙이는 방식**이다. 
+이 벡터는 모델에게 주는 **가이드라인**처럼 작동해서, 원하는 태스크에 모델이 더 잘 반응하도록 도와준다.
+
+<div style="background: #f9f9f9; border-left: 4px solid #007bff; padding: 12px 16px; margin: 24px 0; border-radius: 4px;">
+  💬 이렇게 다양한 PEFT 기법들은 <strong>성능과 비용, 효율성 사이에서 다양한 선택지를 제공</strong>해준다.
+</div>
+
+<br>
+
+---
+### 💭오늘 챙겨간 것들
+이번 게시물에서는 **LLM을 태스크에 맞게 조정하는 전체 과정**을 살펴봤다. Pretraining부터 시작해서 SFT, RLHF, 그리고 최신 Alignment 기법인 DPO까지, 그 흐름 속에서 **LoRA, QLoRA, SoftPrompting**처럼 **비용은 낮추고 효율을 높이는 PEFT 기법**이 어떻게 등장했는지도 이해할 수 있었다!  
+
+다음 게시물에서는 LLM을 잘 다루기 위한 핵심 기술 중 하나인 **프롬프트 엔지니어링**을 간단히 살펴볼 예정이다. <small style="color:gray"><em>(프롬프트 엔지니어링은 이번 팟캐스트의 첫 번째 유닛의 메인 주제이기 때문에 이번 인트로 유닛에서는 핵심만 간단하게 설명하고 넘어감!)</em></small>
 
 
 <br><br>
-
-
-(작성중)
