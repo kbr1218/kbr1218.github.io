@@ -1,0 +1,105 @@
+/* media.css: 반응형 디자인에 대한 조건부 스타일 */
+
+@media (min-width:576px) {
+    .card-columns.listfeaturedtag {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width:992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+    }
+}
+
+@media (max-width:991px) {
+    .featured-box-img-cover {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width:1024px) {
+    .share ul li {
+        display: block;
+    }
+}
+
+@media (max-width:999px) {
+    .featured-box-img-cover {
+        height: 359px;
+    }
+
+    #comments {
+        margin-right: 15px;
+    }
+
+    .jumbotron.fortags {
+        margin-bottom: 0 !Important;
+    }
+
+    .jumbotron {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    .listfeaturedtag .card {
+        height: auto;
+    }
+
+    .listfeaturedtag .wrapfooter {
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .listfeaturedtag .card-block {
+        padding: 20px;
+    }
+
+    .footer {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:1024px) {
+    .post-top-meta .col-md-10 {
+        text-align: center;
+    }
+}
+
+@media (max-width:767px) {
+    .post-top-meta.authorpage {
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+    .jumbotron.fortags {
+        margin-bottom: -50px;
+        margin-top: 3rem;
+        padding: 0;
+        height: 350px;
+        border-radius: 0;
+        background-image: url(../images/jumbotron.jpg);
+        background-size: cover;
+    }
+
+    .jumbotron.fortags .col-md-4 {
+        background: rgba(0, 0, 0, 0.75);
+        color: #fff;
+    }
+
+    .jumbotron.fortags .row {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .share {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,93 @@
+/* layout.css */
+.mainheading {
+    padding: 1rem 0rem;
+}
+
+.main-content {
+    min-height: 300px;
+}
+
+.site-content {
+    min-height: 60vh;
+    padding-top: 1.5rem;
+    margin-top: 57px;
+    transition: all 0.4s;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section.recent-posts {
+    margin-bottom: 0;
+}
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, .44);
+    margin-top: 50px;
+    margin-bottom: 62px;
+    position: relative;
+    background: #fff;
+}
+
+.graybg {
+    background-color: #fafafa;
+    padding: 40px 0 46px;
+    position: relative;
+}
+
+.margtop3rem {
+    margin-top: 3rem;
+}
+
+.sep {
+    height: 1px;
+    width: 20px;
+    background: #999;
+    margin: 0px auto;
+    margin-bottom: 1.2rem;
+}
+
+.layout-page .article-post {
+    font-family: 'Noto Sans KR VF', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+}
+
+.layout-page .article-post p {
+    margin-bottom: 1rem;
+}
+
+.mb-30px {
+    margin-bottom: 30px;
+}
+
+.flex-first {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-unordered {
+        -webkit-box-ordinal-group: 1;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .flex-first {
+        -webkit-box-ordinal-group: 0;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+}
+
+.sticky-top-80 {
+    top: 80px;
+}

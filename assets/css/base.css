@@ -1,0 +1,36 @@
+/* base.css */
+a {
+    color: #00ab6b;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #038252;
+    text-decoration: none;
+}
+
+.form-control::-webkit-input-placeholder,
+.form-control:-moz-placeholder,
+.form-control::-moz-placeholder,
+.form-control:-ms-input-placeholder,
+.form-control::-ms-input-placeholder {
+    color: rgba(0, 0, 0, .5);
+    font-family: 'Noto Sans KR VF' ;
+}
+
+.bd-search input::placeholder,
+.bd-search input::-webkit-input-placeholder,
+.bd-search input:-moz-placeholder,
+.bd-search input::-moz-placeholder,
+.bd-search input:-ms-input-placeholder {
+  font-family: 'Noto Sans KR VF';
+  color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
