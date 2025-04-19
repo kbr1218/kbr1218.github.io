@@ -25,8 +25,7 @@
                 </div>
                 {% endif %}
             </h2>
-            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords: 15 }}</h4>
-
+            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords: 20 }}</h4>
             {% if post.categories %}
             <div class="mb-1 categories_tag">
                 {% for category in post.categories %}

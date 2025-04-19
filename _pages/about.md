@@ -11,7 +11,6 @@ comments: true
             <small style="color:gray">
             <em>
                 my favorite of favorites — 
-                a handpicked mix of Taylor Swift songs that just get me.
             </em>
             </small>
         </p>
