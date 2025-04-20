@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - 샘플링으로 바꾸는 LLM의 말하기 스�
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-09 09:00:00
-image: assets/images/20250402/day1.png
+image: assets/images/20250402/day1_1.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_6/)에서는 모델의 출력을 좌우하는 핵심 스킬, **프롬프트 엔지니어링**의 기본을 정리해봤다.  
 

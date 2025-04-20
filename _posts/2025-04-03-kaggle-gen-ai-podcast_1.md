@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - Transformer 구조 한 눈에 보기🚀"
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-03 09:00:00
-image: assets/images/20250402/day1.png
+image: assets/images/20250402/day1_1.png
 ---
 Day 1 인트로 유닛의 팟캐스트에서는
 - "LLM은 무엇으로 이루어져 있는가?"

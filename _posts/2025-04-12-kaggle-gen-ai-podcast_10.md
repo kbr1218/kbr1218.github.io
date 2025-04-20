@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - LLM은 지금 어디에 쓰이고 있을까? �
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-12 09:00:00
-image: assets/images/20250402/day1.png
+image: assets/images/20250402/day1_1.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_9/)에서는 LLM을 더 빠르고 효율적으로 만드는 **추론 가속 기법들**에 대해 살펴봤다. 
 

@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - Decoder-Only 구조, 왜 LLM은 디코더만 �
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-04 09:00:00
-image: assets/images/20250402/day1.png
+image: assets/images/20250402/day1_1.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_1/)에서는
 LLM의 기반이 되는 **Transformer 구조**, 특히 그 안에서 작동하는 **Self-Attention과 Multi-Head Attention 메커니즘**을 중심으로 살펴봤다.  

@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - 프롬프트 엔지니어링, LLM을 잘 쓰는
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-08 09:00:00
-image: assets/images/20250402/day1.png
+image: assets/images/20250402/day1_1.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_5/)에서는 LLM을 특정 작업에 맞게 조정하는 **파인튜닝**<small style="color:gray">(fine-tuning)</small>의 과정을 살펴봤다.  
 

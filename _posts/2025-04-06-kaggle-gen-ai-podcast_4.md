@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - 오픈소스 LLM 생태계, 한눈에 보기 �
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-06 09:00:00
-image: assets/images/20250402/day1.png
+image: assets/images/20250402/day1_1.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_3/)에서는 LLM이 어떻게 발전해 왔는지, GPT-1부터 GPT-4, Gemini까지 주요 모델들을 중심으로 진화 타임라인을 정리했다.  
 각 모델의 구조적 전환점과 기술 트렌드, 그리고 성능 향상의 주요 포인트를 확인했는데,

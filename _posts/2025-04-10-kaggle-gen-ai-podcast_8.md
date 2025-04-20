@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - 정답이 없어서 더 중요한 LLM 평가법
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-10 09:00:00
-image: assets/images/20250402/day1.png
+image: assets/images/20250402/day1_1.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_7/)에서는 모델이 어떤 단어를 고를지 결정하는 **샘플링 기법**을 공부했고,  
 옵션 하나만 바꿔도 모델의 말투, 창의성, 다양성이 크게 달라질 수 있다는 걸 배웠다!

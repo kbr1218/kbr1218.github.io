@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - Transformer 이후, LLM 진화 타임라인 �
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-05 09:00:00
-image: assets/images/20250402/day1.png
+image: assets/images/20250402/day1_1.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_2/)에서는 요즘 모델들이 왜 Decoder-Only 구조를 주로 채택하는지에 대해 살펴봤다.
 

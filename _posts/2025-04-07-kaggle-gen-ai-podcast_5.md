@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - LLM 파인튜닝 A to Z 🚀"
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-07 09:00:00
-image: assets/images/20250402/day1.png
+image: assets/images/20250402/day1_1.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_4/)에서는 오픈소스 LLM 생태계를 정리하면서, 최근 공개된 다양한 모델이 어떤 특징을 갖고 있는지 살펴봤다.  
 

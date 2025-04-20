@@ -4,7 +4,7 @@ title:  "[Kaggle Gen AI] Day 1 - 품질, 속도, 비용 사이에서 균형 잡�
 author: me
 categories: [ Kaggle Gen-AI ]
 date: 2025-04-11 09:00:00
-image: assets/images/20250402/day1.png
+image: assets/images/20250402/day1_1.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_8/)에서는 LLM이 생성한 결과를 **어떻게 평가할 수 있는지**에 대해 간단하게 살펴봤다.  
 텍스트 생성처럼 **정답이 없는 문제**일수록 단순한 정확도나 BLEU 점수만으로는 부족하고, **다양한 기준과 다면적인 평가 프레임워크**가 필요하다는 걸 알게 되었다.  
