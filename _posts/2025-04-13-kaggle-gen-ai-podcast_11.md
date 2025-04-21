@@ -6,7 +6,7 @@ categories: [ Kaggle Gen-AI ]
 date: 2025-04-13 09:00:00
 image: assets/images/20250402/day1_2.png
 ---
-[지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_9/)까지는 LLM에 대한 전반적인 개념을 훑어봤고,  
+[지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_10/)까지는 LLM에 대한 전반적인 개념을 훑어봤고,  
 
 이번 글부터는 **프롬프트 엔지니어링**<small style="color:gray">(Prompt Engineering)</small>으로 Unit 1 시작!  
 
