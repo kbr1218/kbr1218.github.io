@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Programmers] 코딩테스트 연습문제 풀기 1"
+title:  "[Programmers] 코딩테스트 연습문제 1 (Greedy)"
 author: me
 categories: [ coding-test ]
 date: 2025-04-11 06:00:00
