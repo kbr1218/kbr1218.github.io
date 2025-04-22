@@ -31,7 +31,8 @@ pre {
 .card-body {
     padding-bottom: 0.75rem;
     position: relative;
-    /* padding-bottom: 3rem; */
+    display: flex;
+    flex-direction: column;
 }
 
 .listfeaturedtag h2.card-title,

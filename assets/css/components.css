@@ -41,6 +41,7 @@
 .listfeaturedtag .card,
 .card-footer {
     border: 0;
+    margin-top: 0%;
 }
 
 .listfeaturedtag .thumbnail {
@@ -57,12 +58,17 @@
     padding-left: 0;
 }
 
+.categories_tag {
+    margin-top: auto; /* 아래로 밀기 */
+    margin-right: 6px;
+    margin-bottom: 0px;
+}
+
 /* 게시물 카테고리 태그 */
 .categories_tag a {
     font-size: 0.8em;
     color: #e83e8c; 
     text-decoration: none;
-    margin-right: 6px;
     font-family: 'Noto Sans KR VF';
 }
   
