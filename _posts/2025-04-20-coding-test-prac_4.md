@@ -186,7 +186,116 @@ def solution(numbers):
 
 <br>
 
-(작성중)
+---
+#### 017. 카펫 (완전탐색 lv.2)
+- **문제에서 원하는 것**: 카펫의 전체 가로, 세로 크기를 [가로, 세로] 형태로 반환
 
+<p style="margin-top: 2.3em;"></p>
+
+- **변수 확인**
+    - 테두리에 해당하는 갈색 격자의 수 `brown`
+    - 가운데에 위치한 노란색 격자의 수 `yellow`
+
+<p style="margin-top: 2.3em;"></p>
+
+- **조건**
+    - 카펫의 w는 h와 같거나 h보다 길다
+
+<p style="margin-top: 2.3em;"></p>
+
+- **접근 방법**: 전체 넓이에서 가능한 가로-세로 조합 확인하기
+
+<p style="margin-top: 2.3em;"></p>
+
+- **풀이 전략 1**:  
+    1. 전체 격자의 수는 `brown + yellow`  
+        `brown+yellow`를 `w * h`로 만들 수 있는 모든 조합 찾기
+        
+    2. 각 `(w, h)` 조합에 대해 가운데 노란색 영역의 크기는 `(w - 2) * (h - 2)` 
+        ⇒ 이 값이 `yellow`와 같다면 정답 후보
+
+```python
+def solution(brown, yellow):
+    answer = []
+    ### 1. 전체 격자의 수
+    num = brown + yellow
+    
+    ### 2. 조합 찾기
+    # 테두리는 최소 높이 3 이상
+    for h in range(3, num + 1):
+        # w * h가 되기 위해 나눠 떨어져야 함
+        if num % h == 0:
+            w = num // h
+            # 가로는 세로보다 같거나 길어야 함
+            if w >= h:
+                if (w - 2) * (h - 2) == yellow:
+                    return [w, h]
+```
+
+<br>
+
+---
+#### 018. 피로도 (완전탐색 lv.2)
+- **문제에서 원하는 것**: 유저의 피로도 `k`가 있을 때, 유저가 탐험할 수 있는 최대 던전 수
+
+<p style="margin-top: 2.3em;"></p>
+
+- **변수 확인**
+    - 유저의 현재 피로도 `k`
+    - 각 던전별 “최소 필요 피로도”와 “소모 필요도”가 담긴 2차원 배열 `dungeons`
+
+<p style="margin-top: 2.3em;"></p>
+
+- **조건**
+    - 던전은 하루에 한 번씩만 탐험 가능
+    - 던전의 개수는 1 이상 8 이하
+    - 각 던전은 `["최소 필요 피로도", "소모 피로도"]`로 표현됨
+    - `k` 이상이어야 탐험을 시작할 수 있고, 탐험 후에는 소모 피로도만큼 `k`가 줄어듦
+
+<p style="margin-top: 2.3em;"></p>
+
+- **접근 방법**: 던전의 모든 순열을 시도해보고, 현재 피로도로 얼마나 많은 탐험이 가능한지 계산
+
+<p style="margin-top: 2.3em;"></p>
+
+- **풀이 전략 1**:  
+    1. `itertools.permutations`를 이용해 `dungeons`의 모든 순열 생성  
+
+    2. 각 순서에 대해  
+        현재 피로도 `k`로 순서대로 던전 시도  
+        탐험이 가능하면 피로도 차감하고 ++  
+        탐험이 불가하면 멈추기  
+        
+    3. 각 순서의 최대 탐험 수 중 최댓값을 반환
+
+```python
+from itertools import permutations
+
+answer = []
+
+def solution(k, dungeons):
+    max_count = 0
+    
+    ### 1. dungeons의 모든 순열 생성
+    all_orders = list(permutations(dungeons, len(dungeons)))
+    
+    ### 2. 각 순서에 대해 k로 던전 시도
+    for order in all_orders:
+        cur_k = k
+        count = 0
+        
+        for minimum, consume in order:
+            # 탐험을 하기 위해서는 최소 필요도보다 커야 함
+            if cur_k >= minimum:
+                # 현재 k에서 소모 필요도 --
+                cur_k -= consume
+                count += 1
+            # 최소 필요도보다 작은 k가 남았다면 break
+            else:
+                break
+        max_count = max(max_count, count)
+            
+    return max_count
+```
 
 <br><br>
