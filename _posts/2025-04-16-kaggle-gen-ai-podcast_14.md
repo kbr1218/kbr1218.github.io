@@ -3,7 +3,7 @@ layout: post
 title:  "[Kaggle Gen AI] Day 1 - Codelab 시작, 환경 세팅부터 프롬프트 엔지니어링 실습까지 🚀"
 author: me
 categories: [ Kaggle Gen-AI, codelabs]
-date: 2025-04-15 09:00:00
+date: 2025-04-16 09:00:00
 image: assets/images/20250402/day1_2.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_13/)까지 LLM 프롬프트들의 핵심 기법들을 살펴봤고, 이제 Kaggle의 CodeLab에서 실습을 해 볼 차례!  
