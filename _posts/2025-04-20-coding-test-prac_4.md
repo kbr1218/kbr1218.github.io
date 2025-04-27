@@ -3,7 +3,7 @@ layout: post
 title:  "[Programmers] 코딩테스트 연습문제 4 (완전탐색)"
 author: me
 categories: [ coding-test ]
-date: 2025-04-16 08:00:00
+date: 2025-04-20 08:00:00
 image: https://programmers.co.kr/assets/img-meta-programmers-411e94bf29153dc31004168e6cd500279b1a531a23689303755e51971dee4526.png
 ---
 
@@ -296,6 +296,141 @@ def solution(k, dungeons):
         max_count = max(max_count, count)
             
     return max_count
+```
+
+<br>
+
+---
+#### 019. 모음사전 (완전탐색 lv.2)
+- **문제에서 원하는 것**: 모음으로 이뤄진 단어가 몇 번째 단어인지 return
+
+<p style="margin-top: 2.3em;"></p>
+
+- **변수 확인**
+    - 단어 하나 `word`
+
+<p style="margin-top: 2.3em;"></p>
+
+- **조건**
+    - 사용할 수 있는 알파벳 `A, E, I, O, U`
+    - 길이는 1~5
+
+<p style="margin-top: 2.3em;"></p>
+
+- **접근 방법**: 각 자리별로 `A, E, I, O, U`가 얼마나 많은 단어를 만들 수 있는지 계산하고, 해당 문자가 나오면 그 문자로 시작하는 모든 경우의 수를 더해서 위치 구하기
+
+<p style="margin-top: 2.3em;"></p>
+
+- **풀이 전략 1**:  
+    1. 알파벳 순서를 매핑 `A:0, E:1, I:2, O:3, U:4`  
+
+    2. `word`를 한 글자씩 읽으면서 해당 글자가 몇 번째 알파벳인지 찾기
+
+    3. 그 글자의 가중치(weight) * 해당 알파벳 순서를 결과에 다함
+
+    4. 마지막에 +1 (자기 자신)
+
+```python
+def solution(word):
+    answer = 0
+    # 알파벳
+    dict = ['A', 'E', 'I', 'O', 'U']
+    # 가중치
+    weight = [781, 156, 31, 6, 1]
+    
+    for i, char in enumerate(word):
+        answer += dict.index(char) * weight[i] + 1
+        
+    return answer
+```
+
+<br>
+
+---
+#### 020. 전력망을 둘로 나누기 (완전탐색 lv.2)
+- **문제에서 원하는 것**: 전력망을 두 개로 나누었을 때, 두 전력망이 가지고 있는 송전탑 개수의 차이를 return
+
+<p style="margin-top: 2.3em;"></p>
+
+- **변수 확인**
+    - 송전탑의 개수 `n`
+    - 전선 정보 `wires`
+
+<p style="margin-top: 2.3em;"></p>
+
+- **조건**
+    - `n`은 2 이상 100 이하 자연수
+    - `wires`는 길이가 `n-1`인 정수형 2차원 배열
+    - `wires`의 각 원소는 `[v1, v2]` 2개의 자연수로 이루어져 있고, 이는 전력망의 v1번 송전탑과 v2번 송전탑이 전선으로 연결되어 있다는 것 의미
+
+<p style="margin-top: 2.3em;"></p>
+
+- **접근 방법**: 모든 전선을 하나씩 끊어 나뉜 송전탑의 수 구하기 ⇒ 그 차이를 계산해서 최솟값 갱신
+
+<p style="margin-top: 2.3em;"></p>
+
+- **풀이 전략 1**:  
+    1. 그래프를 인접 리스트 방식으로 표현 (양방향 연결 리스트)
+
+    2. 전선을 하나씩 끊고 끊어진 상태에서 한 쪽 네트워크의 송전탑 개수 구하기
+
+    3. BFS나 DFS로 송전탑 개수 세기
+
+    4. 두 네트워크의 송전탑 개수 차이 계산 (`abs(전력망1_개수 - 전력망2_개수)`)
+
+```python
+def solution(n, wires):
+    answer = n
+    
+    ### 1. 그래프를 인접 리스트 방식으로 표현 (양방향 연결 리스트)
+    # 송전탑 번호가 1부터 시작하니까 n + 1 크기로 리스트 생성
+    graph = [[] for _ in range(n + 1)]
+    
+    for v1, v2 in wires:
+        graph[v1].append(v2)
+        graph[v2].append(v1)
+    
+    ### 3. BFS로 송전탑 개수 세기
+    def bfs(start, removed_v1, removed_v2):
+        # 방문 여부 체크 배열 만들기
+        visited = [False] * (n + 1)
+        # BFS 탐색을 위한 큐
+        queue = [start]
+        visited[start] = True
+        # 시작 노드 포함해서 송전탑 개수 카운트 시작
+        count = 1
+        
+        while queue:
+            # 큐에서 노드 꺼내기
+            node = queue.pop(0)
+            # 현재 노드와 연결된 모든 노드 탐색
+            for next_node in graph[node]:
+                ### 2. 전선을 하나씩 끊고 끊어진 상태에서 한 쪽 네트워크의 송전탑 개수 구하기
+                if (node == removed_v1 and next_node == removed_v2) or (node == removed_v2 and next_node == removed_v1):
+                    # 끊어진 전선은 무시하고 넘어감
+                    continue
+                    
+                # 아직 방문하지 않은 송전탑이면
+                if not visited[next_node]:
+                    visited[next_node] = True
+                    queue.append(next_node)
+                    # 송전탑 개수 추가
+                    count += 1
+        # 탐색한 송전탑 개수 반환
+        return count
+    
+    ### 2. 전선을 하나씩 끊는 걸 모든 전선에 대해 반복
+    for v1, v2 in wires:
+        # 끊어진 상태에서 BFS로 송전탑 개수 세기
+        cnt = bfs(1, v1, v2)
+        
+        ### 4. 두 네트워크의 송전탑 개수 차이 계산
+        # 하나의 송전탑 그룹과 나머지 송전탑 그룹의 개수 차이
+        diff = abs(cnt - (n - cnt))
+        # 최솟값으로 갱신
+        answer = min(answer, diff)
+        
+    return answer
 ```
 
 <br><br>
