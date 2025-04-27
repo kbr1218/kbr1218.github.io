@@ -108,3 +108,12 @@ h5,
 h6 {
     font-family: 'Noto Sans KR VF', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+/* 코드블록만 스타일 변경 */
+.article-post pre,
+.article-post code,
+.article-post pre code {
+  font-family:  monospace, Consolas, Menlo, Monaco, "Courier New" !important;
+  font-size: 13px;
+  line-height: 1.6;
+}
