@@ -1,4 +1,8 @@
 /* media.css: 반응형 디자인에 대한 조건부 스타일 */
+@media screen and (min-width:1500px) {
+    html { font-size:17px; } /* Increase the font size on higher resolutions */
+    .container {max-width:80%;}
+}
 
 @media (min-width:576px) {
     .card-columns.listfeaturedtag {

@@ -6,10 +6,7 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
 License: https://www.wowthemes.net/freebies-license/ 
 */
-@media screen and (min-width:1500px) {
-    html { font-size:17px; } /* Increase the font size on higher resolutions */
-    .container {max-width:80%;}
-}
+
 @font-face {
   font-family: 'Noto Sans KR VF';
   src: url('/assets/fonts/NotoSansKR-VariableFont_wght.ttf') format('truetype');
@@ -20,13 +17,6 @@ License: https://www.wowthemes.net/freebies-license/
 @font-face {
     font-family: 'Ubuntu-Bold';
     src: url('/assets/fonts/Ubuntu-Bold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Ubuntu-BoldItalic';
-    src: url('/assets/fonts/Ubuntu-BoldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
