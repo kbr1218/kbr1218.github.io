@@ -71,7 +71,7 @@ pre {
 
 .article-post {
     font-family: 'Noto Sans KR VF', Merriweather;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);
 }
@@ -114,6 +114,6 @@ h6 {
 .article-post code,
 .article-post pre code {
   font-family:  monospace, Consolas, Menlo, Monaco, "Courier New" !important;
-  font-size: 13px;
+  font-size: 0.9rem;
   line-height: 1.6;
 }
