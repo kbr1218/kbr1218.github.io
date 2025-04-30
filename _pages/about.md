@@ -7,7 +7,7 @@ comments: true
 
 <div class="row justify-content-between">
     <div class="col-md-8 pr-5">
-        <p><strong>🎧 Now Playing</strong><br>
+        <p><strong>Now Playing</strong><br>
             <small style="color:gray">
             <em>
                 my favorite of favorites — 
@@ -24,7 +24,7 @@ comments: true
     <div class="col-md-4">
         <div class="sticky-top sticky-top-80">
             <p>
-                <strong>🧭 WHERE TO FIND ME</strong><br>
+                <strong>Where to Find Me</strong><br>
                 <a target="_blank" href="https://github.com/kbr1218" style="margin-left:25px">Github <i class="fab fa-github"></i></a>
             </p>
         </div>
