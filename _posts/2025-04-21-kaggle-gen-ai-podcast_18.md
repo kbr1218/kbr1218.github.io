@@ -14,7 +14,7 @@ LLM이 똑똑해지는 데 있어 가장 중요한 요소 중 하나는 단어, 
 
 임베딩의 개념과, 왜 중요한지, 검색이나 추천 시스템에서 어떻게 활용되는지, **의미를 숫자로 바꾸는 과정과 그 활용법**을 정리해보겠다.   
 
-[👉 실습 원본 Kaggle notebook 링크 바로가기](https://www.youtube.com/watch?v=xCAVsst6WJ8&list=PLqFaTIg4myu_yKJpvF8WE2JfaG5kGuvoE&index=4)
+[👉 팟캐스트 원본 링크 바로가기](https://www.youtube.com/watch?v=xCAVsst6WJ8&list=PLqFaTIg4myu_yKJpvF8WE2JfaG5kGuvoE&index=4)
 
 <br>
 
