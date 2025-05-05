@@ -158,7 +158,7 @@ ReAct가 실제로 어떻게 작동하는지도 간단한 예시를 통해 알�
 > so it's like a back and forth conversation between the agent and the user with the agent using tools and reasoning to gradually gather all the necessary information
 
 <div style="flex: 3; min-width: 120px;">
-    <img src="/assets/images/20250427/aiagent1.png" 
+    <img src="/assets/images/20250427/aiagent2.png" 
         alt="agent with ReAct" 
         style="max-width: 100%; display: block; margin-left: auto; border: 1px solid #ddd; border-radius: 6px;" />
     <small style="color:gray; display: block; margin-top: 8px;">

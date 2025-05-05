@@ -76,9 +76,17 @@ Day3에서는, **생성형 AI 에이전트** <small style="color:gray">(generati
 일종의 **내부 운영체제** 같은 개념으로, 에이전트가 **어떻게 사고하고** <small style="color:gray">(makes decisions)</small>, **결정하고** <small style="color:gray">(behaves)</small>, **행동하는지** <small style="color:gray">(takes action)</small>를 구성하는 요소들로 이루어져 있다.
 > it's the set of components that determine how the agent behaves, how it makes decisions and how it actually takes action.
 
+<div style="flex: 3; min-width: 120px;">
+    <img src="/assets/images/20250427/aiagent1.png" 
+        alt="general agent architecture and compoents" 
+        style="max-width: 100%; display: block; margin-left: auto; border: 1px solid #ddd; border-radius: 6px;" />
+    <small style="color:gray; display: block; margin-top: 8px;">
+      General agent architecture and components
+    </small>
+</div>
 <div style="margin-top: 3.3em;"></div>
 
-여기서는 이 구조를 크게 세 가지로 나누고 있다:
+위 그림을 보면 알 수 있듯이 에이전트의 구조는 크게 세 가지로 이루어져있다:
 - **🧠 모델**
 - **🛠️ 도구**
 - **🕹️ 오케스트레이션 레이어**
