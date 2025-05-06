@@ -3,7 +3,7 @@ layout: post
 title:  "[Kaggle Gen AI] Day 3 - 에이전트가 세상과 연결되는 방법: Tools 🚀"
 author: me
 categories: [ Kaggle Gen-AI]
-date: 2025-04-27 09:00:00
+date: 2025-04-28 09:00:00
 image: assets/images/20250402/day3_1.png
 ---
 [지난 게시물](https://kbr1218.github.io/kaggle-gen-ai-podcast_23/)에서는 에이전트가 **목표를 세우고 계획하고 실행하는 시스템**이라는 점을 중심으로 그 작동 원리인 **Cognitive Architecture**를 살펴봤다.  
