@@ -22,7 +22,7 @@ Day 3에서는 **생성형 AI 에이전트(Generative AI Agents)**에 대해 다
    <small style="color:gray">유닛 3 – “생성형 AI 에이전트”</small>
    - Listen to the [summary podcast episode](https://www.youtube.com/watch?v=D3Kaqz7VW28&list=PLqFaTIg4myu_yKJpvF8WE2JfaG5kGuvoE&index=5) for this unit  
      <small style="color:gray">유닛 3의 요약 팟캐스트 듣기</small>
-   - To complement the podcast, read the “[Embeddings and Vector Stores/ Databases](https://www.kaggle.com/whitepaper-agents)" whitepaper  
+   - To complement the podcast, read the “[Agents](https://www.kaggle.com/whitepaper-agents)" whitepaper  
      <small style="color:gray">팟캐스트를 보완하기 위해, 관련 백서 읽기</small>
    - Complete these codelabs on Kaggle:  
      <small style="color:gray">Kaggle 코드랩 실습 진행하기</small>  
