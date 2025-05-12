@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about
+title: 
 permalink: /about
 comments: true
 ---
@@ -25,7 +25,7 @@ comments: true
         <div class="sticky-top sticky-top-80">
             <p>
                 <strong>Where to Find Me</strong><br>
-                <a target="_blank" href="https://github.com/kbr1218" style="margin-left:25px">Github <i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://github.com/kbr1218" style="margin-left:10px">Github <i class="fab fa-github"></i></a>
             </p>
         </div>
     </div>
