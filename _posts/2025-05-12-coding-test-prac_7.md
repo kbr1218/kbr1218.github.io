@@ -3,7 +3,7 @@ layout: post
 title:  "[Programmers] 코딩테스트 연습문제 7 (Greedy/DFS/BFS)"
 author: me
 categories: [ coding-test ]
-date: 2025-05-05 08:00:00
+date: 2025-05-12 08:00:00
 image: https://programmers.co.kr/assets/img-meta-programmers-411e94bf29153dc31004168e6cd500279b1a531a23689303755e51971dee4526.png
 ---
 
