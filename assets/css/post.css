@@ -110,3 +110,12 @@ span.post-read-more a:hover {
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
 }
+
+/* 본문 안의 모든 기본 이미지에 테두리 및 둥근 모서리 적용 */
+.article-post img {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; /* 이미지 가운데 정렬 */
+}
